@@ -4,7 +4,7 @@ import path from "path"
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'https://wxpmbqynklcnsm.com/react-demo/',
+  base: '/react-demo/',
   plugins: [react()],
   resolve: {
     alias: {
