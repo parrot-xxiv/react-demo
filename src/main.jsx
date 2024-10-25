@@ -13,7 +13,7 @@ import { ThemeProvider } from './components/component/theme-provider';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <BrowserRouter>
+      <BrowserRouter basename="/react-demo">
         <Routes>
           <Route path="/" element={<App />}>
             <Route path="react-hooks" element={<Outlet />} >
