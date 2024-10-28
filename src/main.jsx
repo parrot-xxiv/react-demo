@@ -8,6 +8,7 @@ import UseStatePage from '@/components/component/use-state.jsx';
 import UseEffectPage from '@/components/component/use-effect.jsx';
 import CurrencyConverter from '@/components/component/currency-converter';
 import NotFound from '@/components/component/not-found';
+import Home from '@/components/component/home';
 import { ThemeProvider } from './components/component/theme-provider';
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
       <BrowserRouter basename="/react-demo">
         <Routes>
           <Route path="/" element={<App />}>
+            <Route index element={<Home/>}/>
             <Route path="react-hooks" element={<Outlet />} >
               <Route path="use-state" element={<UseStatePage />} />
               <Route path="use-effect" element={<UseEffectPage />} />
