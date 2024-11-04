@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button"
 import Code from "@/components/ui/code"
 import { Card, CardHeader, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
