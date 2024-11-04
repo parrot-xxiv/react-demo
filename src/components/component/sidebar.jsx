@@ -69,6 +69,22 @@ export default function Component() {
                                     useEffect
                                 </SidebarMenuButton>
                             </SidebarMenuItem>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton
+                                    onClick={() => navigate('/react-hooks/use-memo')}
+                                    isActive={pathname === '/react-hooks/use-memo'}
+                                >
+                                    useMemo
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton
+                                    onClick={() => navigate('/react-hooks/use-callback')}
+                                    isActive={pathname === '/react-hooks/use-callback'}
+                                >
+                                    useCallback
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
