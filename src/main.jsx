@@ -11,6 +11,7 @@ import NotFound from '@/components/component/not-found';
 import Home from '@/components/component/home';
 import UseCallbackPage from '@/components/component/use-callback';
 import UseMemoPage from '@/components/component/use-memo';
+import UseContextPage from '@/components/component/use-context';
 import { ThemeProvider } from './components/component/theme-provider';
 
 createRoot(document.getElementById('root')).render(
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
               <Route path="use-effect" element={<UseEffectPage />} />
               <Route path="use-memo" element={<UseMemoPage />} />
               <Route path="use-callback" element={<UseCallbackPage />} />
+              <Route path="use-context" element={<UseContextPage />} />
             </Route>
             <Route path="apps" element={<Outlet />} >
               <Route path="currency-converter" element={<CurrencyConverter />} />

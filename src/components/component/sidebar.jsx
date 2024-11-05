@@ -85,6 +85,14 @@ export default function Component() {
                                     useCallback
                                 </SidebarMenuButton>
                             </SidebarMenuItem>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton
+                                    onClick={() => navigate('/react-hooks/use-context')}
+                                    isActive={pathname === '/react-hooks/use-context'}
+                                >
+                                    useContext
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
