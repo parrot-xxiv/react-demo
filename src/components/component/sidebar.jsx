@@ -112,6 +112,14 @@ export default function Component() {
                             </SidebarMenuItem>
                             <SidebarMenuItem>
                                 <SidebarMenuButton
+                                    onClick={() => navigate('/apps/password')}
+                                    isActive={pathname === '/apps/password'}
+                                >
+                                    Password
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
+                            <SidebarMenuItem>
+                                <SidebarMenuButton
                                     onClick={() => navigate('/apps/app-2')}
                                     isActive={pathname === '/apps/app-2'}
                                 >

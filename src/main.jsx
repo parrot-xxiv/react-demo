@@ -12,6 +12,7 @@ import Home from '@/components/component/home';
 import UseCallbackPage from '@/components/component/use-callback';
 import UseMemoPage from '@/components/component/use-memo';
 import UseContextPage from '@/components/component/use-context';
+import PasswordGame from '@/components/component/password-game';
 import { ThemeProvider } from './components/component/theme-provider';
 
 createRoot(document.getElementById('root')).render(
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
             </Route>
             <Route path="apps" element={<Outlet />} >
               <Route path="currency-converter" element={<CurrencyConverter />} />
+              <Route path="password" element={<PasswordGame />} />
             </Route>
           </Route>
           <Route path="*" element={<NotFound/>}/>
