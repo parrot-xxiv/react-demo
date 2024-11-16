@@ -115,7 +115,7 @@ export default function Component() {
                                     onClick={() => navigate('/apps/password')}
                                     isActive={pathname === '/apps/password'}
                                 >
-                                    Password
+                                    Password Game
                                 </SidebarMenuButton>
                             </SidebarMenuItem>
                             <SidebarMenuItem>
