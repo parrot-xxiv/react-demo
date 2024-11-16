@@ -10,7 +10,7 @@
         // Redirect 404 to the root index.html
         var redirectUrl = window.location.pathname;
         if (redirectUrl !== "/" && redirectUrl !== "/index.html") {
-            window.location.href = "/index.html" + redirectUrl;
+            window.location.href = redirectUrl;
         }
     </script>
 </head>
